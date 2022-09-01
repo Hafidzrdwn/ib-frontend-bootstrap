@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Bootstrap Inosoft Bootcamp</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Hafidzrdwn</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#activity">Activity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container pt-5">
+      <section class="hero py-4">
+        <div
+          class="d-flex flex-lg-row flex-md-row align-items-center justify-content-between flex-column-reverse gap-5"
+        >
+          <div class="col-md-5">
+            <h1 class="fw-bold">Hi, I'm Hafidz Ridwan</h1>
+            <p class="text-secondary">
+              As a software engineering student at SMK Negeri 1 Surabaya, who
+              motivated to learn about Full-Stack Web Development. I'm 17 years
+              old and have a passion for learning new things. 4 years ago I
+              started learning about programming and I'm still learning.
+            </p>
+            <div class="btn-group">
+              <a
+                href="https://www.linkedin.com/in/hafidzridwan10032005/"
+                target="_blank"
+                class="btn btn-linkedin"
+              >
+                <i class="fa fa-linkedin me-2"></i>See my LinkedIn
+              </a>
+              <a
+                href="https://github.com/Hafidzrdwn"
+                target="_blank"
+                class="btn btn-github"
+              >
+                <i class="fa fa-github me-2"></i>Follow me on Github
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="images/hero.svg" alt="hero image" class="img-fluid" />
+          </div>
+        </div>
+      </section>
+
+      <section class="my-5 py-5" id="activity">
+        <h1 class="text-center mb-5">My Activity</h1>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-8">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="true"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/img1.jpg"
+                    class="d-block w-100 img-carousel"
+                    alt="Activity 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/img2.jpg"
+                    class="d-block w-100 img-carousel"
+                    alt="Activity 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/img3.jpg"
+                    class="d-block w-100 img-carousel"
+                    alt="Activity 3"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5 py-5" id="projects">
+        <h1 class="mb-5 text-center">My projects</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card card-pj">
+              <img src="images/pj1.png" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <h4 class="card-title">Online Course Website</h4>
+                <p class="card-text text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequatur quasi animi et voluptas facilis necessitatibus,
+                  porro atque aut fugit ducimus.
+                </p>
+                <a
+                  href="https://create-on.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  ><i class="fas fa-eye me-1"></i>View project</a
+                >
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Created 1 year ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card card-pj">
+              <img src="images/pj2.png" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <h4 class="card-title">Scissors Rock Paper Game</h4>
+                <p class="card-text text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequatur quasi animi et voluptas.
+                </p>
+                <a
+                  href="https://hafidzrdwn.github.io/Scissors-Rock-Paper_Game/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  ><i class="fas fa-eye me-1"></i>View project</a
+                >
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Created 11 months ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card card-pj">
+              <img src="images/pj3.png" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <h4 class="card-title">Healthy Food Website</h4>
+                <p class="card-text text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Lorem ipsum dolor. Lorem ipsum dolor sit amet.
+                </p>
+                <a
+                  href="https://fruitsociety.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  ><i class="fas fa-eye me-1"></i>View project</a
+                >
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Created 2 years ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="contact">
+        <h1 class="text-center mb-5">Contact me</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label class="form-label" for="name">Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Enter your name.."
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label class="form-label" for="email"
+                          >Email Address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Enter your valid email address.."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label class="form-label" for="subject">Subject</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Enter your subject.."
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label class="form-label" for="phone">Phone</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phone"
+                          placeholder="Enter your phone number.."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group mb-3">
+                            <label for="gender" class="form-label"
+                              >Gender</label
+                            >
+                            <div class="form-group">
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="gender"
+                                  id="gender1"
+                                  value="Laki-laki"
+                                />
+                                <label class="form-check-label" for="gender1"
+                                  >Laki-laki</label
+                                >
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="gender"
+                                  id="gender2"
+                                  value="Perempuan"
+                                />
+                                <label class="form-check-label" for="gender2"
+                                  >Perempuan</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group mb-3">
+                            <label for="job" class="form-label">Job</label>
+                            <select
+                              id="job"
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected disabled>Select your job</option>
+                              <option value="1">
+                                Full-Stack Web Developer
+                              </option>
+                              <option value="2">Front-End Web Developer</option>
+                              <option value="3">Back-End Web Developer</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          rows="4"
+                          placeholder="Enter your message"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-grid col-md-6 mt-3 mx-auto">
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="js/bootstrap.js"></script>
+  <script
+    src="https://kit.fontawesome.com/2e160f1ac0.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
